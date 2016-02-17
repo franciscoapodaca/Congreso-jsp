@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conferencias del Congreso Internacional de Tecnología.</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <!-- Iniciar sesión -->
+        <script language="javascript" type="text/javascript" src="js/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/c.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/logo.png" width="520" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li ><a href="ponencias.html">Ponencias</a></li>
+                            <li class="active"><a href="conferencias.html">Conferencias</a></li>
+                            <li><a href="conferencistas.html">Conferencistas</a></li>
+                            <li><a href="acercaDe.html">Acerca de</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a id="link" onclick="popup('popUpDiv')">Iniciar Sesi&oacute;n</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Inicio Inicio de sesion -->
+        <form action="iniciaSesion" method="post">
+        <div id="blanket" style="display:none;"></div>
+        <div id="popUpDiv" style="display:none;">
+            <div class="uno">
+                <a href="#"><img src="images/cerrar.png" onclick="popup('popUpDiv')" alt="" WIDTH=18 HEIGHT=18 /></a> 
+            </div>
+            <div class="iniciar">
+                <h3><img src="images/sesion.png" alt="" WIDTH=48 HEIGHT=48 /> Iniciar Sesi&oacute;n</h3>
+            </div>
+
+            <div class="tabla">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Usuario:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtUsuario" value="" placeholder="Ingresa tu nombre de usuario"/></td>
+                        </tr>
+                        <tr>
+                            <td>Contrase&ntilde;a:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="txtContrasenia" value="" placeholder="Ingresa tu contraseña" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="submit" value="Iniciar Sesi&oacute;n" name="iniciar" /></th>
+                            <th><input type="reset" value="Restablecer" name="borrar" /></th>
+                            <th><input type="submit" value="Cancelar" name="cancelar" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>  
+        </form>
+        <!-- Fin Inicio de sesion -->
+      
+         <div class="section secondary-section " id="portfolio">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1>Conoce acerca de las conferencias que te ofrecemos</h1>
+                    <p>Las conferencias te ofrecerán todo un día de conocimientos, experiencias y nuevas amistades para que te adentres en el mundo de la tecnología.</p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">Todas</a>
+                    </li>
+                    <li class="filter" data-filter="RA">
+                        <a href="#noAction">Realidad Aumentada</a>
+                    </li>
+                    <li class="filter" data-filter="Android">
+                        <a href="#noAction">Android</a>
+                    </li>
+                    <li class="filter" data-filter="Drones">
+                        <a href="#noAction">Drones</a>
+                    </li>
+                    <li class="filter" data-filter="CSharp">
+                        <a href="#noAction">CSharp</a>
+                    </li>
+                    <li class="filter" data-filter="IOS">
+                        <a href="#noAction">IOS</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio01.png" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Desarrollo en Android</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Autor</span>Kamel Lajili</div>
+                                    <div>
+                                        <span>Fecha</span>12 de Noviembre 2015</div>
+                                    <div>
+                                        <span>Hora</span>9:00 am - 11:00 am</div>
+                                    <div>
+                                        <span>Título</span>Ganar más dinero con tu Android App en BlackBerry</div>
+                                </div>
+                                <p>Aprende los pasos para hacer dinero con tus Aplicaciones para Android. Desde escojer un buen nombre, el tipo de aplicacion a realizar y como monitorear tus ganancias. Todo esto en Blackberry!.</p>
+                            </div>
+                            <div>  <a href="#" class="da-link button">Leer más.</a></div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio02.png" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Desarrollo de C# en Windows 8</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                               <div class="project-info">
+                                    <div>
+                                        <span>Autor</span>Rodrigo Díaz Concha</div>
+                                    <div>
+                                        <span>Fecha</span>12 de Noviembre 2015</div>
+                                    <div>
+                                        <span>Hora</span>12:00 am - 1:00 pm</div>
+                                    <div>
+                                        <span>Título</span>Desarrollo de C# para campeones</div>
+                                </div>
+                                <p>Vive la experiencia de conocer el ambiente de desarrollo en win 8 con c#,
+                            cuales son los modelos a seguir en arquitectura para tener una un aplicación de calidad,
+                            las facilidades que presenta win8.</p>
+                            </div>
+                             <div>  <a href="#" class="da-link button">Leer más.</a></div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio03.png" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Drones</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                               <div class="project-info">
+                                    <div>
+                                        <span>Autor</span>José Gabriel Ramírez Torres</div>
+                                    <div>
+                                        <span>Fecha</span>13 de Noviembre 2015</div>
+                                    <div>
+                                        <span>Hora</span>2:00 pm - 4:00 pm</div>
+                                    <div>
+                                        <span>Título</span>Sistemas Operativos y Drones</div>
+                                </div>
+                                <p> Un microcontrolador de 8 bits, del tipo que monta un Arduino, basta para que un multicóptero se mantenga estable en el aire. Pero cuando las tareas y operaciones crecen en complejidad hay que recurrir a otras arquitecturas y a los omnipresentes Sistemas Operativos. Desde NuttX hasta ROS, todo para crear un robot volador.</p>
+                            </div>
+                             <div>  <a href="#" class="da-link button">Leer más.</a></div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio04.png" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Realidad Aumentada</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                   <div class="project-info">
+                                    <div>
+                                        <span>Autor</span>Omar José Miratía Moncada</div>
+                                    <div>
+                                        <span>Fecha</span>14 de Noviembre 2015</div>
+                                    <div>
+                                        <span>Hora</span>5:00 pm - 7:00 pm</div>
+                                    <div>
+                                        <span>Título</span>¡Vive la experiencia como si fuera el mundo real!</div>
+                                </div>
+                                <p> Tratamos de Definir la realidad aumentada  como una vision
+                            directa o indirecta de un entorno fisico del mundo real. Estos elementos se combinan con elemeentos virtuales para la creación
+                            de una realidad mixta en tiempo real.</p>
+                            </div>
+                             <div>  <a href="#" class="da-link button">Leer más.</a></div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio05.png" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Desarrollo IOS</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                  <div class="project-info">
+                                    <div>
+                                        <span>Autor</span>Mariano Carrizo</div>
+                                    <div>
+                                        <span>Fecha</span>14 de Noviembre 2015</div>
+                                    <div>
+                                        <span>Hora</span>10:00 qm - 11:00 am</div>
+                                    <div>
+                                        <span>Título</span>Desarrolla para iOS desde cero</div>
+                                </div>
+                                <p> El Dr.Mariano Carrizo explica como desarrollar desde cero para la plataforma iOS de la empresa Apple, tomando en cuenta que puede hacerlo desde
+                            cualquier sistema operativo, sin embargo el tener una Mac le dara ventaja sobre la plataforma.</p>
+                            </div>
+                             <div>  <a href="#" class="da-link button">Leer más.</a></div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio06.png" alt="project 6">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->                    
+                    <!-- End details for portfolio project 9 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix Android">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio01.png" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Ganar dinero con tu Android App</h3>
+                                <p>Kamel Lajili</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix CSharp">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio02.png" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Desarrollo de C# en Windows 8</h3>
+                                <p>Rodrigo Díaz Concha</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix Drones">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio03.png" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Sistemas Operativos y Drones</h3>
+                                <p>José Gabriel Ramírez Torres</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix RA">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio04.png" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Realidad Aumentada y Codigos QR</h3>
+                                <p>Omar José Miratía Moncada</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix IOS">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio05.png" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Desarrolla para iOS desde cero</h3>
+                                <p>Mariano Carrizo</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>Congreso Internacional &copy; 2015 - Todos los Derechos Reservados</p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
